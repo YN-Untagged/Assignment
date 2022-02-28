@@ -11,34 +11,36 @@
 <body>
     <header>
         <nav class="navTab">
-            
-            <table >
-                <tr>
-                    <td class="navLogo"><img  class="logo" src="images/logo.jpg" alt="logo"/></td>
-                    <td><a href="index.html">Home</a></td>
-                    <td><a href="about.html">About Me</a></td>
-                    <td><a href="contact.html">Contact Us</a></td>
-                </tr>
-            </table>
+
+            <div class="navLogo">
+                <img class="logo" src="images/logo.jpg" alt="logo"/>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
     <main>
-        <form action class="contactForm" action="https://formspree.io/f/mgedkqqq" method="POST">
-            <p id="notify"></p>
-            <h1>Contact Us</h1>
-            <label>Name</label><br>
-            <input type="text" name="Name" placeholder="eg. John London"/><br>
-            <label>Email</label><br>
-            <input type="text" name="Email" placeholder="eg. johnlondon@mail.com"/><br>
-            <label>Message</label><br>
-            <textarea name="Message" placeholder="Type message here..."></textarea><br>
-            <label id="question">Answer this:</label>
-            <input type="number" id="answer"/>
-            <button type="button" onclick="CheckAnswer()">Submit answer</button>
+        <div>
+            <form action class="contactForm" action="https://formspree.io/f/mgedkqqq" method="POST">
+                <p id="notify"></p>
+                <h1>Contact Us</h1>
+                <label>Name</label><br>
+                <input type="text" name="Name" placeholder="eg. John London"/><br>
+                <label>Email</label><br>
+                <input type="text" name="Email" placeholder="eg. johnlondon@mail.com"/><br>
+                <label>Message</label><br>
+                <textarea name="Message" placeholder="Type message here..."></textarea><br>
+                <div id="question-container">
+                    <label id="question">Answer this:</label>
+                    <input type="number" id="answer"/>
+                    <button type="button" onclick="CheckAnswer()">Submit answer</button>
+                </div>
 
-            <button id="submitBtn" type="submit" style="display: none;">Send</button><br>
-        </form>  
+                <button id="submitBtn" type="submit">Send</button><br>
+            </form>  
+        </div>
     </main>
 
     <footer>

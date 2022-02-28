@@ -13,9 +13,12 @@ function CheckAnswer(){
     var ans = document.querySelector('#answer').value;
 
     if(num1 + num2 == parseInt(ans)){
+        document.getElementById("question-container").style.display = "none";
         document.getElementById("submitBtn").style.display = "block";
     }
     else{
         document.getElementById("notify").innerText = "Incorrect answer. Please try again."
     }
 }
+
+document.getElementById('questioin-container').style.display ="block";
