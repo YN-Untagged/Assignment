@@ -1,3 +1,4 @@
+/*Contact form question*/
 var num1 = Math.floor(Math.random() * 10);
 var num2 = Math.floor(Math.random() * 10);
 
@@ -22,3 +23,9 @@ function CheckAnswer(){
 }
 
 document.getElementById('questioin-container').style.display ="block";
+
+
+function ScrollTo(id) {
+  const element = document.getElementById(id);
+  element.scrollIntoView(true);
+}

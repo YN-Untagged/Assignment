@@ -1,0 +1,181 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+button {
+    background-color: #ffd300;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: white;
+    border: 1px solid #ffd300;
+    color: #ffd300;
+  }
+
+
+/*Header and navigator*/
+header{
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.logo {
+    width: 100px;
+    padding: 0;
+    margin:0;
+}
+
+.navTab {
+
+    background-color: transparent;
+    padding-top: 20px;
+    overflow: hidden;
+    text-align: right;
+}
+.navTab a :hover{
+    background-color: #ffd300;
+}
+
+.navLink {
+    color : white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navLogo{
+    float: left;
+}
+
+.navProfile{
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+}
+.navProfile img{
+    border-radius: 50%;
+    width: 300px;
+}
+/****Main****/
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #ffd300;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dark {
+    color: white;
+    background-color: black;
+}
+
+.yellow {
+    color: white;
+    background-color: #ffd300;
+}
+
+.container{
+    display: block;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.card_container{
+    float:left;
+    width: 33.3%;
+    text-align: center;
+}
+
+.card{
+    padding: 10px;
+}
+.card img{
+    border-radius: 5px;
+    height: 300px;
+    width: 100%;
+}
+
+.column{
+    float:left;
+    width: 50%;
+    text-align: left;
+}
+
+.column .container{
+    padding: 20px;
+}
+
+.skills_container {
+    width: 100%;
+    background-color: #ddd;
+  }
+  
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+  }
+  
+  .html {width: 80%; background-color: #02f7ff;}
+  .css {width: 75%; background-color: #ff00dd;}
+  .cs {width: 65%; background-color: #faa403;}
+  .js {width: 60%; background-color: #51ff00;}
+  .sql {width: 70%; background-color: #ff006a;}
+
+  /*Contact Form*/
+#submitBtn{
+    display: none;
+}
+#notify{
+    background-color: red;
+}
+#contact{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 80px;
+    padding-top: 80px;
+}
+
+.contact_container{
+    background-color:white ;
+    color: black;
+    width: 70%;
+    padding: 50px;
+    border-radius: 5px;
+    height: fit-content;
+}
+
+.contact_container i{
+    color:#ffd300;
+    font-size: x-large;
+    text-align: center;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ffd300;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css" />
     
     <title>Index</title>
@@ -11,43 +12,152 @@
 <body>
 
     <header>
-        <nav class="navTab">
-
-            <div class="navLogo">
-                <img class="logo" src="images/logo.jpg" alt="logo"/>
+        <nav id="nav" class="navTab">
+            <div>
+                <a href="index.html" class="navLogo">
+                    <img class="logo" src="images/logo.png" alt="logo"/>
+                </a>
+                <a type="button" class="navLink" onclick="ScrollTo('nav');">Home</a >
+                <a type="button" class="navLink" onclick="ScrollTo('about');">About</a>
+                <a type="button" class="navLink" onclick="ScrollTo('contact');">Contact</a>
             </div>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
         </nav>
+        <div class="navProfile">
+            <img src="images/profile.jpg" alt="profile"/>
+            <div>
+                <h1>Yamkela Nyebelele</h1>
+                <h2>Software Developer</h2>
+            </div>
+        </div>
     </header>
     <main>
-        <div class="row">
-            <video src="images/video.mp4" controls loop>
+        <section id="about" class="container dark">
+            <div class="row">
+                <div class="column">
+                    <div class="container">
+                        <h1>About Me</h1>
+                        <h2>Yamkela Nyebelele</h2>
+                        <p>
+                            Recent information technology graduate with progressive experience writing code and designing solutions. 
+                            Seeking a challenging role as a Software Developer Intern. Adopt at working effectively in fast-paced, 
+                            deadline-driven settings that demand strong organizational and analytical skills.
+                        </p>
 
-            </video>
+                        <p><button>Download CV</button></p>
+                    </div>
+                    
+                </div>
+                <div class="column">
+                    <div class="container">
+                        <h1>Skills</h1>
+                        <p>C#</p>
+                        <div class="skills_container">
+                            <div class="skills cs"></div>
+                        </div>
+                        <p>SQL</p>
+                        <div class="skills_container">
+                            <div class="skills sql"></div>
+                        </div>
+                        <p>JavaScript</p>
+                        <div class="skills_container">
+                            <div class="skills js"></div>
+                        </div>
+                        <p>HTML</p>
+                        <div class="skills_container">
+                            <div class="skills html"></div>
+                        </div>
 
-        </div>
-        <div class="row">
-            <div class="column">
-                <h1>Yamkela Nyebelele</h1>
+                        <p>CSS</p>
+                        <div class="skills_container">
+                            <div class="skills css"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="projects" class="container">
+            <h1>Projects</h1>
+            <div class="row">
+                <div class="card_container">
+                    <div class="card">
+                        <img src="images/library.JPG" alt="Library"/>
+                        <h3>Library Catalog</h3>
+                        <p>
+                            Virtual library where user can view if books are avaliable at the library.
+                        </p>
+                        <p>
+                            <span class="dot"></span>C#
+                            <span class="dot"></span>HTML
+                            <span class="dot"></span>CSS
+                        </p>
+                    </div>
+                </div>
+                <div class="card_container">
+                    <div class="card">
+                        <img src="images/sunnyside.JPG" alt="SunnySide"/>
+                        <h3>SunnySide Agency Landing Page</h3>
+                        <p>
+                            Simple landing page for sunnyside agency.<br>
+                            <a src="https://yn-untagged.github.io/sunnyside-agency-landing-page-main/" target="blank"></a>
+                        </p>
+                        <p>
+                            <span class="dot"></span>HTML
+                            <span class="dot"></span>CSS
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="card_container">
+                    <div class="card">
+                        <img src="images/coming.JPG" alt="Coming Soon"/>
+                        <h3>Other Projects</h3>
+                        <p>
+                            Coming Soon
+                        </p>
+                        <p>
+                            <span class="dot"></span>HTML
+                            <span class="dot"></span>CSS
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container yellow"> 
+
+            <div class="contact_container">
+                <form action="https://formspree.io/f/mgedkqqq" method="POST">
+                    <p id="notify"></p>
+                    <h1>Contact Us</h1>
+                    <label>Name</label><br>
+                    <input type="text" name="Name" placeholder="eg. John London" required/><br>
+                    <label>Email</label><br>
+                    <input type="text" name="Email" placeholder="eg. johnlondon@mail.com" required/><br>
+                    <label>Message</label><br>
+                    <textarea name="Message" placeholder="Type message here..." required></textarea><br>
+                    <div id="question-container">
+                        <label id="question">Answer this:</label>
+                        <input title="answer" type="number" id="answer"/>
+                        <button type="button" onclick="CheckAnswer()">Submit answer</button>
+                    </div>
+
+                    <button id="submitBtn" type="submit">Send</button><br>
+                </form> 
                 <p>
-                    Recent information technology graduate with progressive experience writing code and designing solutions. 
-                    Seeking a challenging role as a Software Developer Intern. Adopt at working effectively in fast-paced, 
-                    deadline-driven settings that demand strong organizational and analytical skills.
+                    <a target="blank" href = "https://linkedin.com" title="linkedin"><i class="fa fa-linkedin"></i></a>
+                    <a target="blank" href = "https://instagram.com"title="instagram"><i class="fa fa-instagram"></i></a>
                 </p>
-                <a class="btn-black" href="about.html">Learn more</a>
-
             </div>
-            <div class="column">
-                <img class="userPic" alt="profile" src="images/profile.jpg">
-            </div>
-        </div>
-
+        </section>
     </main>
     <footer>
-        <a target="blank" href = "https://facebook.com">LinkedIn</a>
-        <a target="blank" href = "https://instagram.com">Instagram</a>
+        
     </footer> 
 </body>
+
+<script src="js/site.js"></script>
 </html>
+
